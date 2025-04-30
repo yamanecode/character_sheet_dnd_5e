@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createModText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cs"
+    android:backgroundTint="@color/black"
+    android:backgroundTintMode="add"
+    tools:context=".CreateAbilityScores">
+
+    <Button
+        android:id="@+id/buttonGoToFinishSheet"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:backgroundTintMode="src_over"
+        android:fontFamily="monospace"
+        android:foregroundTint="@color/design_default_color_secondary_variant"
+        android:foregroundTintMode="src_in"
+        android:onClick="goToFinishSheet"
+        android:text="Finish"
+        android:textColor="@color/white"
+        app:iconTint="@color/design_default_color_secondary_variant"
+        app:iconTintMode="src_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameCha"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/createSkillText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="22dp"
+        android:text="Skills"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/createAsModText"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle2" />
+
+    <CheckBox
+        android:id="@+id/cbCreateChaSave"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Saving Throw"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameCha"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameCha"
+        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateWisSave"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Saving Throw"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameWis"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameWis"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateIntSave"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Saving Throw"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameInt"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameInt"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateConSave"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Saving Throw"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameCon"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameCon"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateDexSave"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Saving Throw"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameDex"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameDex"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateSurvival"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Survival"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameCha"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateStealth"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateDeception"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Deception"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateDexSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateAthletics"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateReligion"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Religion"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateChaSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreatePersuasion"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateIntimidation"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Intimidation"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateIntSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateInsight"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreatePerception"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Perception"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateWisSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateNature"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateHistory"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="History"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateConSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateDeception"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateInvestigation"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Investigation"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateIntSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateIntimidation"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateArcana"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Arcana"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateDexSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateAnimal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateSleight"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Sleight of Hand"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameCha"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateReligion"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateInsight"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Insight"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateConSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateHistory"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateMedicine"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Medicine"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateIntSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateInvestigation"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateNature"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Nature"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateWisSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateMedicine"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreatePerformance"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Performance"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateChaSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreatePerception"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreatePersuasion"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Persuasion"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateChaSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreatePerformance"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateAthletics"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Athletics"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateDexSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateArcana"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateAnimal"
+        android:layout_width="135dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Animal Handling"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateStrSave"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateAcrobatics"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateStealth"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Stealth"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameCha"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateSleight"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/cbCreateAcrobatics"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Acrobatics"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cbCreateStrSave"
+        app:layout_constraintTop_toBottomOf="@+id/createSkillText"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/createChaMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameCha" />
+
+    <TextView
+        android:id="@+id/createWisMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameWis" />
+
+    <TextView
+        android:id="@+id/createIntMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameInt" />
+
+    <TextView
+        android:id="@+id/createConMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameCon" />
+
+    <TextView
+        android:id="@+id/createDexMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameDex" />
+
+    <TextView
+        android:id="@+id/createTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:fontFamily="monospace"
+        android:text="Character Creation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle2"
+        app:srcCompat="@drawable/framewhite" />
+
+    <TextView
+        android:id="@+id/textCreateStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Strength"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr" />
+
+    <EditText
+        android:id="@+id/createStrScore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateStr"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:importantForAutofill="no" />
+
+    <ImageView
+        android:id="@+id/imageFrameDex"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameStr"
+        app:srcCompat="@drawable/framewhite" />
+
+    <TextView
+        android:id="@+id/textCreateDex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:text="Dexterity"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameDex"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameStr" />
+
+    <EditText
+        android:id="@+id/createDexScore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameDex"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateDex" />
+
+    <ImageView
+        android:id="@+id/imageFrameCon"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameDex"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/createConScore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameCon"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateCon" />
+
+    <TextView
+        android:id="@+id/textCreateCon"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="Constitution"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13.5sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameCon"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameDex" />
+
+    <ImageView
+        android:id="@+id/imageFrameInt"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameCon"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/createIntScore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameInt"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateInt" />
+
+    <TextView
+        android:id="@+id/textCreateInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:text="Inteligence"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameInt"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameCon" />
+
+    <ImageView
+        android:id="@+id/imageFrameWis"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameInt"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/createWisScore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameWis"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateWis" />
+
+    <TextView
+        android:id="@+id/textCreateWis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Wisdom"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameWis"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameInt" />
+
+    <ImageView
+        android:id="@+id/imageFrameCha"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameWis"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/createChaScore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameCha"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateCha" />
+
+    <TextView
+        android:id="@+id/textCreateCha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Charisma"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameCha"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameWis" />
+
+    <TextView
+        android:id="@+id/createAsModText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
+        android:text="Modifier"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle2" />
+
+    <TextView
+        android:id="@+id/createStrMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/textCreateStr" />
+
+    <CheckBox
+        android:id="@+id/cbCreateStrSave"
+        android:layout_width="71dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:buttonTint="@color/white"
+        android:text="Saving Throw"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageFrameStr"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

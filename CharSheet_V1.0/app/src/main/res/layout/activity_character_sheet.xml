@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cs"
+    tools:context=".CharacterSheet">
+
+    <EditText
+        android:id="@+id/sheetChaScore"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="416dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toBottomOf="@+id/textSheetStr"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr15"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="452dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAligment4"
+        app:srcCompat="@drawable/framewhite" />
+
+    <TextView
+        android:id="@+id/textSheetStr13"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="424dp"
+        android:backgroundTint="@color/black"
+        android:text="Charisma"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr3" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr10"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="284dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAligment4"
+        app:srcCompat="@drawable/framewhite" />
+
+    <TextView
+        android:id="@+id/textSheetStr8"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="@color/black"
+        android:text="Inteligence"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr3" />
+
+    <EditText
+        android:id="@+id/sheetIntScore"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="248dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toBottomOf="@+id/textSheetStr"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/sheetWisScore"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="332dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toBottomOf="@+id/textSheetStr"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr14"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="368dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAligment4"
+        app:srcCompat="@drawable/framewhite" />
+
+    <TextView
+        android:id="@+id/textSheetStr12"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="@color/black"
+        android:text="Wisdom"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr3" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr9"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAligment4"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/sheetConScore"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toBottomOf="@+id/textSheetStr"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textSheetStr7"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="@color/black"
+        android:text="Constitution"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr3" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr4"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAligment4"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/sheetDexScore"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toBottomOf="@+id/textSheetStr"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textSheetDex"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/black"
+        android:text="Dexterity"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr3" />
+
+    <ImageView
+        android:id="@+id/imageFrameStr3"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAligment4"
+        app:srcCompat="@drawable/framewhite" />
+
+    <EditText
+        android:id="@+id/sheetStrScore"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toBottomOf="@+id/textSheetStr"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textSheetStr"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/black"
+        android:text="Strength"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageFrameStr3"
+        app:layout_constraintTop_toTopOf="@+id/imageFrameStr3" />
+
+    <TextView
+        android:id="@+id/createName4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSheetClass"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:backgroundTintMode="add"
+        android:entries="@array/classes"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/createClass4"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSheetRace"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/createSubclass4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Subclass"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createClass4" />
+
+    <EditText
+        android:id="@+id/sheetCharSubclass"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="42dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Subclass"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/createSubclass4"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSheetClass"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerSheetRace"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:backgroundTintMode="add"
+        android:entries="@array/races"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/createName4"
+        app:layout_constraintTop_toBottomOf="@+id/sheetCharName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/createRace4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:text="Race"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createName4" />
+
+    <EditText
+        android:id="@+id/sheetCharName"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/createName4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/createClass4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Class"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createRace4" />
+
+    <EditText
+        android:id="@+id/sheetCharBackground"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Background"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/createBackground4"
+        app:layout_constraintTop_toBottomOf="@+id/sheetCharSubclass"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/createAligment4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Aligment"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBackground4" />
+
+    <TextView
+        android:id="@+id/createBackground4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Background"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createSubclass4" />
+
+    <EditText
+        android:id="@+id/sheetCharAligment"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Aligment"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/createBackground4"
+        app:layout_constraintTop_toBottomOf="@+id/sheetCharBackground"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
