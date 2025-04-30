@@ -1,5 +1,3 @@
-# character_sheet_dnd_5e
-
 # Character Sheet for Dungeons & Dragons 5th Edition
 ## Concluded in: 06/2022
 ## Time invested
